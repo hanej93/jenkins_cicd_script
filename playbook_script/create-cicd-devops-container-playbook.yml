@@ -15,9 +15,9 @@
     ignore_errors: yes
 
   - name: pull the newest docker image from Docker Hub
-    command: docker hanej93/cicd-project-ansible
+    command: docker pull hanej93/cicd-project-ansible
 
   - name: create a container using cicd-project-ansible image
-    command: docker run -d --name my_cicd_project -p 8080:8080 hanej93/cicd-project-ansible
+    command: docker run -d --name my_cicd_project -p 8081:8080 hanej93/cicd-project-ansible
 
 
